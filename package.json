@@ -1,0 +1,10 @@
+{
+  "name": "pARadigm-server",
+  "version": "0.1.0",
+  "main": "app.js",
+  "author": "drumath2237",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^7.0.0"
+  }
+}
