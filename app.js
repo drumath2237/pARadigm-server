@@ -5,6 +5,8 @@ let server = http.createServer()
 let wss = new ws({server: server})
 let connection = []
 
+let PORT = process.env.PORT||3000;
+
 wss.on('connection', (socket)=>{
   console.log('socket connected');
 
@@ -26,5 +28,5 @@ server.on('request', (req,res)=>{
   res.end()
 })
 
-server.listen(3000)
-console.log('listen on port 3000');
+server.listen(PORT)
+console.log('listen on port ' + PORT);
