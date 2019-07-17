@@ -5,7 +5,7 @@ let server = http.createServer()
 let wss = new ws({server: server})
 let connection = []
 
-let port = process.env.$PORT||3000;
+let port = (process.env.PORT||3000);
 
 wss.on('connection', (socket)=>{
   console.log('socket connected');
