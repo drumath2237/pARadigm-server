@@ -11,7 +11,7 @@ wss.on('connection', (socket)=>{
   console.log('socket connected');
 
   socket.on('message', (data)=>{
-    console.log(data);
+    console.log(data["JointName"]);
     wss.clients.forEach((client)=>{
       client.send(data)
     })
